@@ -1,0 +1,44 @@
+/* Add application styles & imports to this file! */
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
+
+body {
+  background-image: url('https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/6235ea7fbaf601e8d3980228_boy-kicking-ball-on-football-field-2021-09-24-03-47-56-utc-min-min.jpg');
+  font-family: 'Muli';
+}
+
+table {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.9;
+  border-collapse:collapse
+}
+table,
+tr,
+td,
+th {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 30px;
+  height: 30px;
+}
+td {
+  text-align: left;
+  padding: 10px;
+}
+th {
+  border-bottom: 1px solid black;
+}
+div {
+  padding: 20px;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.odd {
+  background-color: rgb(246, 246, 246);
+}

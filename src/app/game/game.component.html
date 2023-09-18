@@ -1,0 +1,22 @@
+<h1 class="title">Last 10 games</h1>
+<table>
+  <tr *ngFor="let round of rounds; let odd = odd" [class]="odd ? 'odd' : ''">
+    <td><img [src]="round.teams.home.logo" alt="" /></td>
+    <td>{{ round.teams.home.name }}</td>
+    <td>{{ round.goals.home }}</td>
+    <td>-</td>
+    <td>{{ round.goals.away }}</td>
+    <td>{{ round.teams.away.name }}</td>
+    <td><img [src]="round.teams.away.logo" alt="" /></td>
+  </tr>
+</table>
+
+<div>
+  <button class="button"
+    [routerLink]="[
+      '/league/' + rounds[0].league.country + '/' + rounds[0].league.id
+    ]"
+  >
+     Go Back
+  </button>
+</div>

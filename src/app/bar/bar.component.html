@@ -1,0 +1,13 @@
+<h1 class="title">Football updates</h1>
+<div class="bar">
+  <button
+    *ngFor="let btn of buttons"
+    class="button cursor"
+    [id]="btn.state + 'Selected'"
+    [routerLink]="['/league/' + btn.state + '/' + btn.league]"
+    routerLinkActive="is-active"
+  >
+    {{ btn.state }}
+  </button>
+</div>
+<!-- (click)="selectState(btn)"-->
